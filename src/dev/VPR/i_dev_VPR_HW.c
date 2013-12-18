@@ -49,7 +49,7 @@ void VPR_HW_Close(void)
 void VPR_HW_ClearCPHM(void)
 {
 	memset(cphm,0x00,sizeof(cphm ));
-	sprintf(cphm,"%s","Î´Ê¶±ð");
+	sprintf(cphm,"%s","æœªè¯†åˆ«");
 }
 void VPR_HW_SetCPHM(char * _cphm)
 {
@@ -114,14 +114,14 @@ void ReceiveMsg(void* argsvr)
 			if(TRUE == VPR_GetVehicleInfo_Plate((char* )chPlate))
 			{
 				echo_vpr("plate:%s\n",chPlate);
-				if (strlen((char*)chPlate)>0 &&  strncmp((char*)chPlate ,"ÎÞ³µÅÆ",6)!=0)
+				if (strlen((char*)chPlate)>0 &&  strncmp((char*)chPlate ,"æ— è½¦ç‰Œ",6)!=0)
 				{
 					VPR_HW_SetCPHM((char * )chPlate);
 					i_dev_VPR_ReceivePlate();
 				}
 				else 
 				{
-					echo_vpr("ÎÞ³µÅÆ");
+					echo_vpr("æ— è½¦ç‰Œ");
 				}
 			}
 		}
