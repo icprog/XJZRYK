@@ -11,3 +11,4 @@ STRIP=/crosstools/rhy_tools/gcc-3.4.5-glibc-2.3.6/arm-linux/bin/arm-linux-strip 
     --build=i686-linux \
     --host=arm-linux \
     --target=arm-linux 
+    --target=arm-linux 
